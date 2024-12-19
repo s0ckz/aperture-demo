@@ -31,6 +31,6 @@ func (s *Server) GetPrice(ctx context.Context,
 	}
 
 	return &pricesrpc.GetPriceResponse{
-		Price: q.Price,
+		PriceSats: q.Price,
 	}, nil
 }

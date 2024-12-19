@@ -22,6 +22,7 @@ type Server struct {
 	contentServer *grpc.Server
 
 	pricesServer *grpc.Server
+	pricespb.UnimplementedPricesServer
 }
 
 func NewServer() (*Server, error) {
